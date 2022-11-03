@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>ricezione</title>
+    </head>
+<form action="segreteria.html"; method="get">
+            <h1 style="color: red">RICEZIONE DATI</h1>
+       
+        <br>
+        <fieldset style="border-color: red">
+        <p id="nome">NOME: </p>
+        <p id="cognome">COGNOME: </p>
+        <p id="data">DATA: </p>
+        <p id="classe">CLASSE: </p>
+        <p id="indirizzo">INDIRIZZO: </p>
+        <p id="indirizzo_mail">MAIL: </p>
+        <p id="codice_fiscale">CODICE FISCALE: </p>
+        <br>
+    <input type="submit" value="torna indietro">
+    
+
+
+<script>
+    var url=document.location.search.substring(0);
+    var url1 = url.split("&")[0];
+    var a = url1.substr(4);
+    document.getElementById("nome").innerHTML += a;
+    
+    var url=document.location.search.substring(0);
+    var url2 = url.split("&")[1];
+    var b = url2.substr(3);
+    document.getElementById("cognome").innerHTML += b;
+    
+    var url=document.location.search.substring(0);
+    var url3 = url.split("&")[2];
+    var c = url3.substr(3);
+    document.getElementById("data").innerHTML += c;
+    
+    var url=document.location.search.substring(0);
+    var url4 = url.split("&")[3];
+    var d = url4.substr(3);
+    document.getElementById("classe").innerHTML += d;
+
+    var url=document.location.search.substring(0);
+    var url5 = url.split("&")[4];
+    var e = url5.substr(3);
+    document.getElementById("indirizzo").innerHTML += e;
+
+    var url=document.location.search.substring(0);
+    var url6 = url.split("&")[5];
+    var f = url6.substr(3);
+    document.getElementById("indirizzo_mail").innerHTML += f;
+
+    var url=document.location.search.substring(0);
+    var url7 = url.split("&")[6];
+    var g = url7.substr(3);
+    document.getElementById("codice_fiscale").innerHTML += g;
+</script>
+</html>

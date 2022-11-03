@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>offerte</title>
+    </head> 
+
+    <body>
+        <form action="segreteria pt2.html"; method="get">
+            <input type="text" placeholder="nome" id="nome" name="NO">
+            <input type="text" placeholder="cognome" id="cognome" name="CO">
+            <br><br>
+            <input type="date" placeholder="data di nascita" id="data" name="DA">
+            <br><br>
+            <input type="text" placeholder="classe e sezione" id="classe" name="CL">
+            <select id="indirizzo" name="IN">
+                <option value="">indirizzo</option>
+                <option value="informatica">informatica</option>
+                <option value="grafica">grafica</option>
+                <option value="chimica">chimica</option>
+                <option value="ambientale">ambientale</option>
+                <option value="materiali">materiali</option>
+            </select>
+            <br><br>
+            <input type="text" placeholder="indirizzo e-mail" name="MA">
+            <input type="text" placeholder="codice fiscale" name="CF">
+            <input type="submit" placeholder="invia" onclick=accesso()>
+        </form>
+    </body>
+
+    <script>
+        function accesso()
+    {
+		alert("Stai per essere reindirizzato ad una nuova pagina\nclicca 'ok' per continuare");
+		location.reload();  
+	}
+    </script>
+
+</html>
